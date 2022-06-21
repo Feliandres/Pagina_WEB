@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-- INICIO ESTILOS BARRA PROGRESIVA - FELIPE -->
+    <style>
+        .progress-bar {
+            background-color: #1a1a1a;
+            height: 25px;
+            padding: 5px;
+            width: 350px;
+            margin: 50px 0;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+        }
+        
+        .progress-bar span {
+            display: inline-block;
+            height: 100%;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+            transition: width .4s ease-in-out;
+            background-color: #ccc;
+        }
+        /**** DEGRADADOS ****/
+        
+        .blue span {
+            background-color: #34c2e3;
+        }
+        
+        .orange span {
+            background-color: #fecf23;
+            background-image: linear-gradient(to top, #fecf23, #fd9215);
+        }
+        
+        .green span {
+            background-color: #a5df41;
+            background-image: linear-gradient(to top, #a5df41, #4ca916);
+        }
+        
+        .purple span {
+            background-color: #C23AFA;
+            background-image: linear-gradient(to top, #C23AFA, #8612FA);
+        }
+        
+        .red span {
+            background-color: #FA4352;
+            background-image: linear-gradient(to top, #FA4352, #FA0501);
+        }
+        /**** RAYADADOS ****/
+        
+        .stripes span {
+            background-size: 30px 30px;
+            background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+            animation: animate-stripes 3s linear infinite;
+        }
+        
+        @keyframes animate-stripes {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 60px 0;
+            }
+        }
+        /**** SOMBRA ****/
+        
+        .shine span {
+            position: relative;
+        }
+        
+        .shine span::after {
+            content: '';
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #fff;
+            border-radius: 3px;
+            animation: animate-shine 2s ease-out infinite;
+        }
+        
+        @keyframes animate-shine {
+            0% {
+                opacity: 0;
+                width: 0;
+            }
+            50% {
+                opacity: .5;
+            }
+            100% {
+                opacity: 0;
+                width: 95%;
+            }
+        }
+        /**** BRILLO ****/
+        
+        .glow span {
+            box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+            animation: animate-glow 1s ease-out infinite;
+        }
+        
+        @keyframes animate-glow {
+            0% {
+                box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+            }
+            50% {
+                box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;
+            }
+            100% {
+                box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+            }
+        }
+    </style>
+    <!-- FIN ESTILOS BARRA PROGRESIVA - FELIPE-->
+
+</head>
+
+<body>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <!-- INICIO DE ENCABEZADO - JHON -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#"><img src="/img/Logo.png" alt="Logo"></a>
+                <div class="opciones">
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#home">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#services">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Habilidades</a>
+                        </li>
+                        <li>
+                            <a href="#about">Acerca de mí</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contactar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN DE ENCABEZADO - JHON -->
+
+    <!-- IMAGENES INICIO - JHON -->
+    <div class="ilustration">
+        <hr>
+        <h1>MI PORTAFOLIO</h1>
+        <img src="/img/ventana_nav.png " alt="windows-1 ">
+        <img src="/img/ventana_nav2.png " alt="windows-2 ">
+        <br>
+        <img src="/img/dev.png " alt="developer ">
+        <img src="/img/pantalla.png " alt="screen ">
+        <br>
+        <img src="/img/foto.jpg " alt="photo ">
+    </div>
+    <!-- FIN IMAGENES INICIO - JHON -->
+
+    <!-- INICIO DE LA SECCION SERVICIOS - CAMILA -->
+    <div id="services">
+        <div class="contenedor">
+            <hr>
+            <h2>Servicios</h2>
+            <div class="card">
+                <h4>Mantenimientos</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim quam rhoncus vitae neque nunc, natoque donec aenean. Nunc ipsum lorem blandit diam feugiat. Consectetur ultrices eget id commodo id pretium nisl quisque. Vestibulum
+                    habitasse adipiscing eget nisl, ut. Et fames eget consequat in gravida. </p>
+                <img src="/img/img_mant.png " alt="imagen de mantenimiento ">
+                <a href="# ">Ver más ...</a>
+            </div>
+            <div class="card">
+                <h4>Diseño</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim quam rhoncus vitae neque nunc, natoque donec aenean. Nunc ipsum lorem blandit diam feugiat. Consectetur ultrices eget id commodo id pretium nisl quisque. Vestibulum
+                    habitasse adipiscing eget nisl, ut. Et fames eget consequat in gravida. </p>
+                <img src="/img/img_disenio.png " alt="imagen de diseño ">
+                <a href="# ">Ver más ...</a>
+            </div>
+            <div class="card">
+                <h4>Software</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim quam rhoncus vitae neque nunc, natoque donec aenean. Nunc ipsum lorem blandit diam feugiat. Consectetur ultrices eget id commodo id pretium nisl quisque. Vestibulum
+                    habitasse adipiscing eget nisl, ut. Et fames eget consequat in gravida. </p>
+                <img src="/img/img_software.png " alt="imagen de software ">
+                <a href="# ">Ver más ...</a>
+            </div>
+        </div>
+    </div>
+    <!-- FIN DE LA SECCION SERVICIOS - CAMILA -->
+
+    <!-- INICIO SECCION EXPERIENCIA - JHON -->
+    <div id="experience">
+        <div class="contenedor">
+            <hr>
+            <h2>Experiencia</h2>
+            <i class="iconify" data-icon="healthicons:factory-worker"></i>
+            <p>Trabajando en esta sección ...</p>
+        </div>
+    </div>
+    <!-- FIN SECCION EXPERIENCIA - JHON -->
+
+    <!-- SECCION HABILIDADES PAULINA/FELIPE -->
+    <div id="skills">
+        <div class="contenedor">
+            <hr>
+            <h2>Habilidades</h2>
+            <div class="card-skill">
+                <h4>C++</h4>
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 70% "></span>
+                </div>
+                <p>70%</p>
+            </div>
+            <div class="card-skill">
+                <h4>Figma</h4>
+                <div class="progress-bar orange stripes shine">
+                    <span style="width: 60% "></span>
+                </div>
+                <p>60%</p>
+            </div>
+            <div class="card-skill">
+                <h4>HTML</h4>
+                <div class="progress-bar green stripes shine">
+                    <span style="width: 75% "></span>
+                </div>
+                <p>75%</p>
+            </div>
+            <div class="card-skill">
+                <h4>CSS</h4>
+                <div class="progress-bar purple stripes shine">
+                    <span style="width: 50% "></span>
+                </div>
+                <p>50%</p>
+            </div>
+            <div class="card-skill">
+                <h4>Java</h4>
+                <div class="progress-bar red stripes shine">
+                    <span style="width: 40% "></span>
+                </div>
+                <p>40%</p>
+            </div>
+            <div class="card-skill">
+                <h4>JavaScript</h4>
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 55% "></span>
+                </div>
+                <p>55%</p>
+            </div>
+            <div class="card-skill">
+                <h4>Python</h4>
+                <div class="progress-bar green stripes shine">
+                    <span style="width: 50% "></span>
+                </div>
+                <p>50%</p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN SECCION HABILIDADES - PAULINA/FELIPE -->
+
+    <!-- INICIO SECCION ACERCA DE MI - MARCOS -->
+    <div id="about">
+        <div class="contenedor">
+            <hr>
+            <h2>Acerca de mí</h2>
+            <div class="box-info1">
+                <h4>Formación Académica</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A tincidunt habitant amet eleifend commodo convallis tellus. Gravida scelerisque id sagittis suspendisse vestibulum congue in. Quam rutrum cursus enim ut. Lacus, ac facilisis porttitor
+                    mauris enim ac. Nibh volutpat, facilisis enim libero phasellus at a. Sodales odio ac tincidunt auctor. Ut at facilisis ornare. Ut aenean ut eget quam. Pulvinar eu, convallis sit mi iaculis tempus tempor, arcu sagittis. Donec vitae
+                    morbi faucibus ac fermentum id tortor. Sit sit magna scelerisque proin. Tellus nunc, egestas morbi nunc dictum ipsum velit. Varius erat erat quisque ut convallis mauris vitae sit integer. Aliquam elementum in tellus aliquet gravida
+                    lectus.
+                </p>
+            </div>
+            <div class="box-info2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A tincidunt habitant amet eleifend commodo convallis tellus. Gravida scelerisque id sagittis suspendisse vestibulum congue in. Quam rutrum cursus enim ut. Lacus, ac facilisis porttitor
+                    mauris enim ac. Nibh volutpat, facilisis enim libero phasellus at a. Sodales odio ac tincidunt auctor. Ut at facilisis ornare. Ut aenean ut eget quam. Pulvinar eu, convallis sit mi iaculis tempus tempor, arcu sagittis. Donec vitae
+                    morbi faucibus ac fermentum id tortor. Sit sit magna scelerisque proin. Tellus nunc, egestas morbi nunc dictum ipsum velit. Varius erat erat quisque ut convallis mauris vitae sit integer. Aliquam elementum in tellus aliquet gravida
+                    lectus.
+                </p>
+                <hr>
+                <h4>Hobbies</h4>
+            </div>
+            <div class="box-info1">
+                <h4>Residencia</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A tincidunt habitant amet eleifend commodo convallis tellus. Gravida scelerisque id sagittis suspendisse vestibulum congue in. Quam rutrum cursus enim ut. Lacus, ac facilisis porttitor
+                    mauris enim ac. Nibh volutpat, facilisis enim libero phasellus at a. Sodales odio ac tincidunt auctor. Ut at facilisis ornare. Ut aenean ut eget quam. Pulvinar eu, convallis sit mi iaculis tempus tempor, arcu sagittis. Donec vitae
+                    morbi faucibus ac fermentum id tortor. Sit sit magna scelerisque proin. Tellus nunc, egestas morbi nunc dictum ipsum velit. Varius erat erat quisque ut convallis mauris vitae sit integer. Aliquam elementum in tellus aliquet gravida
+                    lectus.
+                </p>
+            </div>
+            <div class="box-info2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A tincidunt habitant amet eleifend commodo convallis tellus. Gravida scelerisque id sagittis suspendisse vestibulum congue in. Quam rutrum cursus enim ut. Lacus, ac facilisis porttitor
+                    mauris enim ac. Nibh volutpat, facilisis enim libero phasellus at a. Sodales odio ac tincidunt auctor. Ut at facilisis ornare. Ut aenean ut eget quam. Pulvinar eu, convallis sit mi iaculis tempus tempor, arcu sagittis. Donec vitae
+                    morbi faucibus ac fermentum id tortor. Sit sit magna scelerisque proin. Tellus nunc, egestas morbi nunc dictum ipsum velit. Varius erat erat quisque ut convallis mauris vitae sit integer. Aliquam elementum in tellus aliquet gravida
+                    lectus.
+                </p>
+                <hr>
+                <h4>Futuro</h4>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="contenedor">
+            <hr>
+            <h2>Proyectos</h2>
+            <i class="iconify" data-icon="healthicons:factory-worker "></i>
+            <p>Trabajando en esta sección ...</p>
+        </div>
+    </div>
+    <!-- FIN SECCION ACERCA DE MI - MARCOS -->
+
+    <!-- SECCION DE CONTACTOS - FELIPE -->
+    <div id="contacts">
+        <div class="contenedor ">
+            <hr>
+            <h2>Contactar</h2>
+            <form action="https://formsubmit.co/felipe.pazmino@epn.edu.ec " method="POST ">
+
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombres sólo acepta letras y espacios en blanco" required> <br>
+                <input type="text" name="apellido" placeholder="Escribe tu apellido" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Apellidos sólo acepta letras y espacios en blanco" required> <br>
+                <input type="email" name="correo" placeholder="Escribe tu correo" required>
+                <br>
+                <textarea name="descripcion " placeholder="Descripción "></textarea>
+                <input type="submit">
+            </form>
+
+        </div>
+    </div>
+    <!-- FIN SECCION DE CONTACTOS - FELIPE -->
+
+    <!-- INICIO FOOTER - FELIPE -->
+    <footer class="footer">
+        <hr>
+        <label> © 2022 Jhon Torres. Todos los derechos reservados.</label>
+        <br>
+        <label>Politicas.</label>
+        <br>
+        <label>Terminos de uso</label>
+        <br>
+        <div class="social-media">
+            <span class="iconify" data-icon="typcn:social-youtube-circular"></span>
+            <span class="iconify" data-icon="akar-icons:github-fill"></span>
+            <span class="iconify" data-icon="entypo-social:twitter-with-circle"></span>
+            <span class="iconify" data-icon="akar-icons:facebook-fill"></span>
+        </div>
+    </footer>
+    <!-- FIN FOOTER - FELIPE -->
+</body>
+
+</html>
